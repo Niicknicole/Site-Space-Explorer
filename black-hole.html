@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black Hole - Space Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="black-hole.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-home">
+      <div class="logo">
+        <a href="index.html"><img src="imagens/space-shuttle.png" alt="Logo" /></a>
+      </div>
+      <a href="index.html" class="nav-link">Home</a>
+    </div>
+
+    <nav class="nav-menu">
+      <div class="dropdown">
+        <button class="dropbtn">Explore &#x25BE;</button>
+        <div class="dropdown-content">
+          <a href="missions.html">Missions</a>
+          <a href="solar-system.html">Solar System</a>
+          <a href="black-hole.html">Black Hole</a>
+          <a href="galaxy.html">Galaxy</a>
+        </div>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search..." id="searchInput" />
+        <button onclick="search()">🔍</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Interruptor -->
+<div class="video-switch">
+  <span>Click</span>
+  <input type="checkbox" id="video-toggle" />
+  <label for="video-toggle"></label>
+</div>
+
+<!-- Overlay com Vídeo -->
+<div class="video-overlay" id="videoOverlay">
+  <video id="bgVideo" autoplay muted loop>
+    <source src="imagens/dd41fce9-14d9-4ed7-ab9a-9fe715df7fd9.mp4.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeos.
+  </video>
+</div>
+
+  <section class="blackhole-hero">
+  <div class="hero-text">
+    <h1>Black Holes</h1>
+    <p>Journey into the deepest mysteries of the universe — where gravity reigns, light vanishes, and time itself warps. Discover the enigma of black holes.</p>
+  </div>
+</section>
+<section class="info-section">
+  <div class="info-content">
+
+    <h2>Types of Black Holes</h2>
+    <ul>
+      <li><strong>Stellar:</strong> Born from collapsed stars.</li>
+      <li><strong>Supermassive:</strong> Found at the center of galaxies, millions of times the Sun's mass.</li>
+      <li><strong>Intermediate:</strong> Rare, forming a bridge between stellar and supermassive.</li>
+      <li><strong>Primordial:</strong> Hypothetical tiny black holes formed in the early universe.</li>
+    </ul>
+
+    <h2>How It Works</h2>
+    <p>
+      Black holes form when a large amount of mass is compressed into an incredibly small space, creating a region of extreme density and gravity. This intense gravitational pull distorts the fabric of spacetime so strongly that nothing—not even light—can escape once it crosses a boundary known as the event horizon.
+
+The event horizon marks the point of no return. Anything that passes beyond it is inevitably drawn inward. At the center lies what is theorized to be a singularity—a point where density becomes infinite and the known laws of physics break down.
+
+Contrary to popular belief, black holes don’t “suck” objects like a vacuum cleaner. Instead, they exert gravitational influence just like any other massive object. From a safe distance, their pull is no different from that of a star of the same mass.
+    </p>
+  </div>
+</section>
+
+ <section class="gallery-section">
+    
+      <div class="gallery-grid">
+        <img src="imagens/bc3.webp" alt="Black Hole 1" />
+        <img src="imagens/bc2.jpg" alt="Black Hole 2" />
+        <img src="imagens/mini.jpg" alt="Black Hole 3" />
+      </div>
+    </section>
+    <section class="info-section">
+  <h2>Studies and Discoveries</h2>
+  <p>For decades, black holes were purely theoretical objects, predicted by Einstein’s theory of general relativity but impossible to observe directly. Over time, indirect evidence—such as the motion of stars near invisible massive objects or intense X-ray emissions from accretion disks—provided strong support for their existence.
+<br><br>
+A landmark moment in black hole research came in 2019, when the Event Horizon Telescope (EHT) collaboration released the first-ever image of a black hole, located in the center of the galaxy M87. The image showed a glowing ring of gas surrounding a dark central region—the black hole’s shadow—providing visual confirmation of theories that had existed for over a century.
+<br>
+This achievement was the result of a global network of radio telescopes working together to create an Earth-sized virtual telescope, capable of resolving details at the event horizon scale. Since then, studies have continued to refine our understanding of black holes, including their role in galaxy formation, their interactions with surrounding matter, and even the potential to test quantum theories of gravity.
+Black holes, once considered mysterious and unreachable, are now active frontiers in astrophysics, offering a glimpse into some of the most extreme conditions in the universe.</p>
+</section>
+  
+
+<footer class="site-footer">
+  <div class="footer-left">
+    <p>This site was created for academic purposes only. It must not be commercialized or altered.</p>
+    <p>Developed by Nicole Oliveira | São Paulo, SP</p>
+  </div>
+
+  <div class="footer-right">
+    <p>&copy; 2025 Space Explorer. All rights reserved.</p>
+    <p>Images and videos sourced from NASA Library and Pixabay</p>
+  </div>
+
+  <div class="footer-logo">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/space-shuttle.png" alt="Logo" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+ <script src="video-switch.js"></script>
+ <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  <title>Space Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+  <div class="logo">
+  <a href="index.html">
+    <img src="imagens/space-shuttle.png" alt="Logo" />
+  </a>
+</div>
+  <nav class="nav-menu">
+      <div class="dropdown">
+        <button class="dropbtn">Explore &#x25BE;</button>
+         <div class="dropdown-content">
+         <a href="missions.html">Missions</a>
+         <a href="solar-system.html">Solar System</a>
+         <a href="black-hole.html">Black Hole</a>
+         <a href="galaxy.html">Galaxy</a>
+      </div>
+         </div>
+<div class="search-box">
+  <input type="text" placeholder="Search..." id="searchInput" />
+  <button onclick="search()">🔍</button>
+</div>
+<div id="searchResults"></div>
+     </nav>
+</header>
+
+<section class="hero">
+  <div class="overlay">
+    <h1>Welcome to Space Explorer</h1>
+  </div>
+</section>
+
+<section class="poster-section">
+  <h2>Featured Space</h2>
+      <div class="poster-grid">
+        <div class="poster">
+        <div class="poster-inner">
+          <div class="poster-front">
+            <img src="imagens/R (1).jpg" alt="Perseverance" />
+          </div>
+          <div class="poster-back">
+            <p>NASA’s Perseverance rover explores Mars to find signs of past life and study the planet’s surface.</p>
+          </div>
+        </div>
+        <h3>Mars Mission</h3>
+        </div>
+
+      <div class="poster">
+        <div class="poster-inner">
+          <div class="poster-front">
+            <img src="imagens/R.jpg" alt="Saturn ring" />
+          </div>
+          <div class="poster-back">
+            <p>Saturn’s rings are made of ice and rock, revealing clues about the planet’s formation.</p>
+          </div>
+        </div>
+        <h3>Saturn's Rings</h3>
+      </div>
+      
+      <div class="poster">
+        <div class="poster-inner">
+         <div class="poster-front">
+           <img src="imagens/Photograph-the-Moon.jpg" alt="Moon" />
+       </div>
+        <div class="poster-back">
+         <p>The Moon is Earth’s only natural satellite, shaping tides and inspiring exploration.</p>
+        </div>
+       </div>
+         <h3>Moon</h3>
+      </div>
+</section>
+
+<section class="info-section-home">
+  <div class="info-block">
+    <h3>Mars Mission</h3>
+     <p>The upcoming Mars mission, currently planned for the 2030s, aims to land the first humans on the Red Planet. Led by international space agencies like NASA and ESA, the mission will explore Mars' geology, climate, and potential for past life. It also serves as a critical step toward long-term human presence in deep space, testing sustainable life support systems, in-situ resource utilization, and planetary protection technologies.</p>
+  </div>
+
+  <div class="info-block">
+    <h3>Saturn’s Rings</h3>
+     <p>Saturn’s rings are composed primarily of ice particles mixed with dust and rock, ranging from tiny grains to objects the size of mountains. Discovered in the 1600s and studied in depth by NASA’s Cassini mission, the rings may have formed from a shattered moon or comet. These structures help scientists understand the dynamics of planetary systems, orbital mechanics, and the early formation of our solar system.</p>
+  </div>
+
+  <div class="info-block">
+    <h3>The Moon</h3>
+     <p>Earth's only natural satellite, the Moon plays a crucial role in science and space exploration. It has been the focus of human missions since Apollo and will be visited again through NASA’s Artemis program. The Moon serves as a testing ground for technologies needed for Mars and beyond. Its surface offers potential for resource extraction, such as water ice, and the establishment of long-term lunar bases for scientific and exploratory purposes.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-left">
+    <p>This site was created for academic purposes only. It must not be commercialized or altered.</p>
+    <p>Developed by Nicole Oliveira | São Paulo, SP</p>
+  </div>
+
+  <div class="footer-right">
+    <p>&copy; 2025 Space Explorer. All rights reserved.</p>
+    <p>Images and videos sourced from NASA Library and Pixabay</p>
+  </div>
+
+  <div class="footer-logo">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/space-shuttle.png" alt="Logo" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+ <script src="script.js"></script>
+</body>
+</html>

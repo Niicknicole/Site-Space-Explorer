@@ -1,0 +1,195 @@
+/* === LOGO E HOME === */
+.logo-home {
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo img {
+  height: 3em;
+  width: auto;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;       
+  padding: 3px 10px;          
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1.3em;
+  font-family: monospace;
+}
+.nav-link:hover {
+  background-color: #00ffff; 
+  color: black;              
+}
+.blackhole-hero {
+  background-image: url('imagens/blk.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  overflow: hidden;
+}
+.blackhole-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 70px;
+}
+.hero-text h1 {
+ font-size: 4em;
+  font-family: 'Zen Dots', sans-serif;
+  margin-bottom: 20px;
+}
+.hero-text p {
+  font-size: 1.4em;
+  line-height: 1.6;
+  color: #ccc;
+  font-family: monospace;
+}
+.info-section {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 60px 40px;
+  color: #111
+}
+.info-section h2 {
+  font-family: 'Zen Dots', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #000;
+}
+.info-content h3 {
+  font-family: 'Zen Dots', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #000;
+}
+.info-content ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.info-section p,
+.info-section ul {
+  font-family: monospace;
+  font-size: 1.4em;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+}
+.info-section ul {
+  list-style: none;
+  padding: 0;
+}
+.info-section li::before {
+  margin-right: 8px;
+}
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;                
+  padding: 20px;
+  background-color:  #f9f9f9;
+  
+}
+.gallery-grid img {
+  width: 270px;            
+  height: 270px;
+  object-fit: cover;    
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+}
+.gallery-grid img:hover {
+  transform: translateY(-10px);
+}
+/* ===== INTERRUPTOR ===== */
+.video-switch {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 12px;
+  border-radius: 20px;
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.5);
+}
+.video-switch input {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.video-switch label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 40px;
+  height: 20px;
+  background: #555;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+.video-switch label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+.video-switch input:checked + label {
+  background: #00bfff;
+}
+.video-switch input:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+/* ===== OVERLAY VÍDEO ===== */
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}
+.video-overlay video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* RODAPÉ */
+.site-footer {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1em;
+}

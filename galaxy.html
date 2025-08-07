@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galaxy - Space Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="galaxy.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-home">
+      <div class="logo">
+        <a href="index.html"><img src="imagens/space-shuttle.png" alt="Logo" /></a>
+      </div>
+      <a href="index.html" class="nav-link">Home</a>
+    </div>
+    <nav class="nav-menu">
+      <div class="dropdown">
+        <button class="dropbtn">Explore &#x25BE;</button>
+        <div class="dropdown-content">
+          <a href="missions.html">Missions</a>
+          <a href="solar-system.html">Solar System</a>
+          <a href="black-hole.html">Black Hole</a>
+          <a href="galaxy.html">Galaxy</a>
+        </div>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search..." id="searchInput" />
+        <button onclick="search()">🔍</button>
+      </div>
+    </nav>
+  </header>
+  <section class="hero-section">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Galaxies</h1>
+      <p>
+        Explore the vast cosmos of galaxies — from spirals like the Milky Way to ancient ellipticals and chaotic irregulars. Dive into the mystery of the universe's grandest structures.</p>
+    </div>
+  </div>
+</section>
+
+<div class="info-sections">
+  <section>
+    <h2>Understanding Galaxies</h2>
+    <p>Galaxies are vast gravitationally bound systems composed of stars, stellar remnants, interstellar gas, dust, and dark matter.<br>They are the fundamental structural units of the universe, ranging in size from dwarf galaxies with a few billion stars to giant ellipticals containing hundreds of billions.
+
+Each galaxy is embedded in a dark matter halo that governs its dynamics and formation. Most galaxies harbor supermassive black holes at their centers, influencing star formation and galactic evolution through feedback processes.
+<br><br>
+Galaxies are not isolated — they form groups, clusters, and superclusters, interacting and merging over cosmic time. These interactions shape their structure and trigger new stellar births. The study of galaxies allows astronomers to trace the large-scale structure of the universe, understand cosmological evolution, and investigate the distribution of matter and energy.</p>
+  </section>
+
+  <section>
+    <h2>The Milky Way: Our Galactic Home</h2>
+    <p>The Milky Way is a barred spiral galaxy containing our Solar System. It spans over 100,000 light-years and holds hundreds of billions of stars. At its center lies a supermassive black hole, Sagittarius A*, surrounded by a dense bulge and rotating spiral arms.
+Our Solar System is located in the Orion Arm, a minor arm of the galaxy.<br><br> The Milky Way also includes a halo of ancient stars, globular clusters, and an invisible dark matter halo that shapes its motion.
+As a member of the Local Group, the Milky Way is interacting with neighboring galaxies, including the Magellanic Clouds. It is on course to merge with the Andromeda Galaxy in about 4 billion years. Studying the Milky Way helps scientists understand galaxy formation, evolution, and the conditions that support life.
+
+</p>
+  </section>
+  <section>
+    <h2>Ancient and Modern Studies</h2>
+    <p>In ancient times, civilizations observed the night sky and interpreted celestial objects — including galaxies — as divine lights or mystical symbols.<br> Without telescopes, what we now know as galaxies were seen as faint “nebulae” or star clouds.
+
+Modern astronomy transformed this view. In the early 20th century, Edwin Hubble proved that many of these nebulae were actually entire galaxies beyond the Milky Way. With the advent of powerful telescopes, spectrometry, and space-based observatories, scientists can now analyze galaxy structures, measure their distances, and study their evolution over billions of years.
+<br><br>
+Today, galactic research helps us understand the universe’s expansion, the role of dark matter and energy, and the origins of cosmic structures. What was once myth is now mapped with precision.</p>
+  </section>
+
+  <section>
+    <h2>Types of Galaxies</h2>
+    <p>Galaxies come in many shapes. These are the most common:</p>
+    <ul>
+      <li><strong>Spiral:</strong> With graceful, winding arms — like the Milky Way.</li>
+      <li><strong>Elliptical:</strong> Rounded and filled with old stars.</li>
+      <li><strong>Irregular:</strong> Chaotic, often formed by collisions.</li>
+    </ul>
+  </section>
+
+</div>
+<section class="galaxy-random-section">
+  <h2>✨ Discover a Galaxy</h2>
+  <button id="discoverBtn">Discover Random Galaxy</button>
+  <div id="galaxyResult" class="galaxy-display hidden">
+    <h3 id="galaxyName"></h3>
+    <img id="galaxyImage" src="" alt="Galáxia aleatória">
+    <p id="galaxyDescription"></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-left">
+    <p>This site was created for academic purposes only. It must not be commercialized or altered.</p>
+    <p>Developed by Nicole Oliveira | São Paulo, SP</p>
+  </div>
+
+  <div class="footer-right">
+    <p>&copy; 2025 Space Explorer. All rights reserved.</p>
+    <p>Images and videos sourced from NASA Library and Pixabay</p>
+  </div>
+
+  <div class="footer-logo">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/space-shuttle.png" alt="Logo" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <script src="galaxies.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

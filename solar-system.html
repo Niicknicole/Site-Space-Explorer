@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solar System - Space Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="solar-system.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-home">
+      <div class="logo">
+        <a href="index.html"><img src="imagens/space-shuttle.png" alt="Logo" /></a>
+      </div>
+      <a href="index.html" class="nav-link">Home</a>
+    </div>
+
+    <nav class="nav-menu">
+      <div class="dropdown">
+        <button class="dropbtn">Explore &#x25BE;</button>
+        <div class="dropdown-content">
+          <a href="missions.html">Missions</a>
+          <a href="solar-system.html">Solar System</a>
+          <a href="black-hole.html">Black Hole</a>
+          <a href="galaxy.html">Galaxy</a>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search..." id="searchInput" />
+        <button onclick="search()">🔍</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content-page">
+     <section class="hero-system">
+  <div class="hero-text">
+    <h1>Solar System</h1>
+    <p>Discover the planets, moons, and mysteries that make up our Solar System — from the scorching surface of Mercury to the icy edges of Neptune</p>
+  </div>
+</section>
+
+    <nav class="planet-index">
+      <a href="#sun">Sun</a>
+      <a href="#mercury">Mercury</a>
+      <a href="#venus">Venus</a>
+      <a href="#earth">Earth</a>
+      <a href="#mars">Mars</a>
+      <a href="#jupiter">Jupiter</a>
+      <a href="#saturn">Saturn</a>
+      <a href="#uranus">Uranus</a>
+      <a href="#neptune">Neptune</a>
+    </nav>
+  
+<section id="sun" class="planet-section">
+  <h2>Sun</h2>
+  <div class="planet-content">
+    <p>The Sun is the star at the center of our Solar System and the primary source of energy for Earth. It is composed mainly of hydrogen and helium, with a diameter of about 1.39 million km (864,000 miles), making it 109 times wider than Earth.
+      <br><br>
+      The Sun’s surface temperature is around 5,500°C (9,932°F), while its core reaches about 15 million°C (27 million°F). At approximately 4.6 billion years old, it is in the main sequence phase, where it fuses hydrogen into helium, powering life on Earth.It also generates powerful solar winds and magnetic storms that can affect satellites, communication systems, and even power grids on Earth.
+    </p>
+    <img src="imagens/sun.jpg" alt="Sun">
+  </div>
+</section>
+
+   <section id="mercury" class="planet-section">
+  <h2>Mercury</h2>
+  <div class="planet-content">
+    <p>Mercury is the smallest planet in our Solar System and the closest to the Sun, with a diameter of 4,880 km (3,032 miles). It has almost no atmosphere, which means temperatures vary from 430°C (800°F) during the day to -180°C (-290°F) at night. 
+      <br><br>
+      Surface and Exploration  
+      Its surface is heavily cratered, resembling Earth's Moon. NASA’s MESSENGER mission (2011–2015) provided detailed maps and data about Mercury’s composition and magnetic field. Due to its proximity to the Sun, it orbits the Sun in just 88 Earth days.Mercury has no moons and no rings, making it unique among the inner planets.
+      Its slow rotation causes one day on Mercury to last about 59 Earth days.
+    </p>
+    <img src="imagens/mercury.jpg" alt="Mercury">
+  </div>
+</section>
+
+ <section id="venus" class="planet-section">
+  <h2>Venus</h2>
+  <div class="planet-content">
+    <p>Venus is the second planet from the Sun and is similar in size to Earth, with a diameter of 12,104 km (7,521 miles). However, it has a thick atmosphere composed mainly of carbon dioxide (96%) and clouds of sulfuric acid, which create a runaway greenhouse effect.
+      <br><br>
+      Climate and Exploration  
+      The surface temperature on Venus can reach 465°C (869°F), making it hotter than Mercury despite being farther from the Sun. Missions like NASA’s Magellan and ESA’s Venus Express have studied its atmosphere and volcanic surface features.Winds in the upper atmosphere can reach speeds of over 300 km/h (186 mph), circling the planet faster than it rotates.
+    </p>
+    <img src="imagens/venus.jpg" alt="Venus">
+  </div>
+</section>
+
+<section id="earth" class="planet-section">
+  <h2>Earth</h2>
+  <div class="planet-content">
+    <p>Earth is the third planet from the Sun and the only known world to support life. It has a diameter of 12,742 km (7,918 miles) and orbits the Sun in 365.25 days. 
+      <br><br>
+      Unique Features  
+      Earth’s atmosphere, composed mainly of nitrogen (78%) and oxygen (21%), protects life from harmful solar radiation and maintains a stable climate. Over 70% of its surface is covered by water. The planet’s magnetic field, generated by its molten core, shields it from solar wind.Earth has one natural satellite, the Moon, which influences tides and stabilizes the planet’s axial tilt.
+Its dynamic systems—like plate tectonics and the water cycle—make it geologically and biologically active.
+    </p>
+    <img src="imagens/ea.jpg" alt="Earth">
+  </div>
+</section>
+
+
+   <section id="mars" class="planet-section">
+  <h2>Mars</h2>
+  <div class="planet-content">
+    <p>Mars, the fourth planet from the Sun, is known as the Red Planet due to its iron oxide-rich surface. It has a diameter of 6,779 km (4,212 miles) and takes 687 Earth days to orbit the Sun.
+      <br><br>
+      Mars features Olympus Mons, the tallest volcano in the Solar System, and Valles Marineris, a canyon stretching over 4,000 km (2,500 miles). Rovers like Curiosity and Perseverance explore its surface, searching for signs of past water and life.Mars has two small moons, Phobos and Deimos, believed to be captured asteroids.
+Dust storms on Mars can engulf the entire planet and last for weeks, drastically altering surface visibility.
+    </p>
+    <img src="imagens/sunmag.jpg" alt="Mars">
+  </div>
+</section>
+
+<section id="jupiter" class="planet-section">
+  <h2>Jupiter</h2>
+  <div class="planet-content">
+    <p>Jupiter is the largest planet in the Solar System, with a diameter of 139,820 km (86,881 miles). It is a gas giant composed mainly of hydrogen and helium, with a strong magnetic field and dozens of moons, including Ganymede, the largest moon in the Solar System.
+      <br><br>
+      Storms and Exploration  
+      Its atmosphere is known for the Great Red Spot, a massive storm larger than Earth that has been active for centuries. NASA’s Juno mission has been studying Jupiter’s atmosphere, magnetic field, and internal structure since 2016.Jupiter rotates extremely fast, completing one rotation in just under 10 hours, creating strong equatorial winds.
+Its powerful radiation belts and magnetic field are among the strongest of any planet in the Solar System.
+    </p>
+    <img src="imagens/jupiter.jpg" alt="Jupiter">
+  </div>
+</section>
+
+<section id="saturn" class="planet-section">
+  <h2>Saturn</h2>
+  <div class="planet-content">
+    <p>Saturn, the sixth planet from the Sun, is famous for its spectacular ring system made of ice and rock particles. It has a diameter of 116,460 km (72,366 miles) and, like Jupiter, is mainly composed of hydrogen and helium.
+      <br><br>
+      Rings and Exploration  
+      NASA’s Cassini spacecraft (2004–2017) provided detailed images and data about Saturn’s rings, atmosphere, and moons, such as Titan, which has lakes of liquid methane.Saturn has at least 145 confirmed moons, making it the planet with the most known natural satellites.
+Its low density means it would float in water if there were a body large enough to hold it.
+    </p>
+    <img src="imagens/saturn.jpg" alt="Saturn">
+  </div>
+</section>
+ 
+<section id="uranus" class="planet-section">
+  <h2>Uranus</h2>
+  <div class="planet-content">
+    <p>Uranus is the seventh planet from the Sun and is known for rotating on its side with an axial tilt of 98°. It has a diameter of 50,724 km (31,518 miles) and a pale blue color due to methane in its atmosphere.
+      <br><br>
+      Characteristics and Exploration  
+      Uranus is an ice giant with a frigid atmosphere and faint rings. It was visited only once by Voyager 2 in 1986, which revealed its unique rotation and 27 known moons.Its extreme tilt causes each pole to experience 42 years of continuous sunlight or darkness.
+Winds on Uranus can reach speeds of up to 900 km/h (560 mph), despite its calm appearance.
+    </p>
+    <img src="imagens/uranus.jpg" alt="Uranus">
+  </div>
+</section>
+
+<section id="neptune" class="planet-section">
+  <h2>Neptune</h2>
+  <div class="planet-content">
+    <p>Neptune is the eighth and farthest planet from the Sun, with a diameter of 49,244 km (30,598 miles). It appears deep blue due to methane in its atmosphere and experiences the fastest winds in the Solar System, reaching 2,100 km/h (1,300 mph).
+      <br><br>
+      Exploration  
+      Voyager 2’s 1989 flyby revealed Neptune’s Great Dark Spot, a storm similar to Jupiter’s Great Red Spot, and detailed its 14 known moons, including Triton, which has geysers of nitrogen ice.
+    </p>
+    <img src="imagens/neptune.jpg" alt="Neptune">
+  </div>
+</section>
+  </main>
+
+
+  <footer class="site-footer">
+  <div class="footer-left">
+    <p>This site was created for academic purposes only. It must not be commercialized or altered.</p>
+    <p>Developed by Nicole Oliveira | São Paulo, SP</p>
+  </div>
+
+  <div class="footer-right">
+    <p>&copy; 2025 Space Explorer. All rights reserved.</p>
+    <p>Images and videos sourced from NASA Library and Pixabay</p>
+  </div>
+
+  <div class="footer-logo">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/space-shuttle.png" alt="Logo" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

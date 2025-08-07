@@ -1,0 +1,153 @@
+/*Solar System*/
+.logo-home {
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo img {
+  height: 3em;
+  width: auto;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;      
+  padding: 3px 10px;           
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1.3em;
+  font-family: monospace;
+}
+.nav-link:hover {
+  background-color: #00ffff;  
+  color: black;          
+}
+body {
+  background: url("imagens/er.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.638);
+  z-index: -1;
+}
+/* Título */
+.hero-system {
+  background-image: url('imagens/ol.png');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+
+.hero-system::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.653);
+  z-index: 1;
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+  padding: 60px;
+  max-width: 800px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 4em;
+  font-family: 'Zen Dots', sans-serif;
+  margin-bottom: 20px;
+}
+.hero-text p {
+  font-size: 1.4em;
+  color: #ccc;
+  font-family: monospace;
+  font-size: 1.4em;
+}
+/* Índice fixo */
+.planet-index {
+   position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(25, 19, 19, 0.316);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-family: 'Zen Dots', sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.planet-index a {
+color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+.planet-index a:hover {
+   background-color: #888;
+  color: white;
+}
+/* Seções de planetas */
+.planet-section {
+  padding: 60px 30px;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+.planet-section h2 {
+  font-size: 2.2em;
+  color: #00bfff;
+  margin-bottom: 30px;
+  font-family: 'Zen Dots', sans-serif;
+  text-align: center;
+}
+.planet-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
+}
+.planet-content p {
+  font-family: monospace;
+  flex: 1;
+  font-size: 1.2em;
+  color: #ccc;
+  line-height: 1.6;
+  text-align: left;
+}
+.planet-content img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+}
+html {
+  scroll-behavior: smooth;
+}
+:target {
+  scroll-margin-top: 100px;
+}
+/* RODAPÉ */
+.site-footer {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1em;
+}
