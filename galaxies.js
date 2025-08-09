@@ -38,7 +38,7 @@ const galaxies = [
   },
   {
     name: "Pinwheel Galaxy",
-    image: "imagens/Pinwheel.webp",
+    image: "imagens/pinwheel.webp",
     description: "A face-on spiral galaxy with beautiful arms and active star formation."
   }
 ];
