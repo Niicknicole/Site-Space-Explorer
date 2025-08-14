@@ -232,10 +232,10 @@ body {
   .missions-hero {
     background-position: center center;
     background-size: cover;
-    justify-content: center; /* centraliza o texto */
+    justify-content: center;
     text-align: center;
     padding: 40px 20px;
-    min-height: 70vh; /* um pouco menor no celular */
+    min-height: 70vh; 
   }
 @media (max-width: 480px) {
     .mission-index {
@@ -270,5 +270,5 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 100; /* Fica acima da lista */
+  z-index: 100; 
 }

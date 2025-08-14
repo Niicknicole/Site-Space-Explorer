@@ -366,16 +366,16 @@
 
 }
 }
-/* Vídeo horizontal full screen em portrait */
+
 @media (max-width: 768px) {
   #bgVideo {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 100vw;       /* Preenche a largura da tela */
-    height: auto;       /* Ajusta altura proporcional */
-    transform: translate(-50%, -50%); /* Centraliza o vídeo */
-    object-fit: cover;  /* Corta topo e fundo se necessário */
+    width: 100vw;      
+    height: auto;   
+    transform: translate(-50%, -50%);
+    object-fit: cover; 
     z-index: -1;
   }
 }

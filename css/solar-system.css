@@ -286,5 +286,5 @@ html {
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 100; /* Fica acima da lista */
+  z-index: 100; 
 }
