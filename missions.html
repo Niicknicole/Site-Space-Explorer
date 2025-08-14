@@ -6,10 +6,9 @@
   <link rel="icon" href="imagens/favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet" />
   <title>Missions - Space Explorer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="missions.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/missions.css" />
 </head>
-
 <body>
   <!-- NAVBAR -->
   <header class="navbar">
@@ -19,7 +18,15 @@
     </div>
     <a href="index.html" class="nav-link">Home</a>
   </div>
+
+  <!-- Botão Hamburguer (mobile) -->
+  <button class="hamburger">&#9776;</button>
+
+  <!-- Menu principal (desktop + mobile) -->
   <nav class="nav-menu">
+    <!-- Botão fechar (mobile) -->
+    <button class="close-menu">&times;</button>
+
     <div class="dropdown">
       <button class="dropbtn">Explore &#x25BE;</button>
       <div class="dropdown-content">
@@ -29,12 +36,10 @@
         <a href="galaxy.html">Galaxy</a>
       </div>
     </div>
-
-    <div class="search-box">
-      <input type="text" placeholder="Search..." id="searchInput" />
-      <button onclick="search()">🔍</button>
-    </div>
-  </nav>
+     <div class="search-box">
+    <input type="text" placeholder="Search..." id="search" />
+    <button class="search-button">🔍</button>
+     </div>
 
 </header>
 
@@ -149,7 +154,7 @@ The CBERS program is considered a cornerstone of Brazil’s space diplomacy and 
   </div>
 </footer>
 
-  <script src="script.js"></script>
-
+  <script src="js/script.js"></script>
+  
 </body>
 </html>

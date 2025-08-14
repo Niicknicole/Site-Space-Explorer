@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="imagens/favicon.ico" type="image/x-icon" />
   <title>Black Hole - Space Explorer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="black-hole.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/black-hole.css" />
   <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -17,22 +17,28 @@
       </div>
       <a href="index.html" class="nav-link">Home</a>
     </div>
+<!-- Botão Hamburguer (mobile) -->
+  <button class="hamburger">&#9776;</button>
 
-    <nav class="nav-menu">
-      <div class="dropdown">
-        <button class="dropbtn">Explore &#x25BE;</button>
-        <div class="dropdown-content">
-          <a href="missions.html">Missions</a>
-          <a href="solar-system.html">Solar System</a>
-          <a href="black-hole.html">Black Hole</a>
-          <a href="galaxy.html">Galaxy</a>
-        </div>
+  <!-- Menu principal (desktop + mobile) -->
+  <nav class="nav-menu">
+    <!-- Botão fechar (mobile) -->
+    <button class="close-menu">&times;</button>
+
+    <div class="dropdown">
+      <button class="dropbtn">Explore &#x25BE;</button>
+      <div class="dropdown-content">
+        <a href="missions.html">Missions</a>
+        <a href="solar-system.html">Solar System</a>
+        <a href="black-hole.html">Black Hole</a>
+        <a href="galaxy.html">Galaxy</a>
       </div>
-      <div class="search-box">
-        <input type="text" placeholder="Search..." id="searchInput" />
-        <button onclick="search()">🔍</button>
-      </div>
-    </nav>
+    </div>
+     <div class="search-box">
+    <input type="text" placeholder="Search..." id="search" />
+    <button class="search-button">🔍</button>
+     </div>
+     </nav>
   </header>
 
   <!-- Interruptor -->
@@ -117,8 +123,8 @@ Black holes, once considered mysterious and unreachable, are now active frontier
   </div>
 </footer>
 
- <script src="video-switch.js"></script>
- <script src="script.js"></script>
+ <script src="js/video-switch.js"></script>
+ <script src="js/script.js"></script>
 
 </body>
 </html>

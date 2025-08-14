@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Solar System - Space Explorer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="solar-system.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/solar-system.css" />
   <link rel="icon" href="imagens/favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 </head>
@@ -18,22 +18,28 @@
       <a href="index.html" class="nav-link">Home</a>
     </div>
 
-    <nav class="nav-menu">
-      <div class="dropdown">
-        <button class="dropbtn">Explore &#x25BE;</button>
-        <div class="dropdown-content">
-          <a href="missions.html">Missions</a>
-          <a href="solar-system.html">Solar System</a>
-          <a href="black-hole.html">Black Hole</a>
-          <a href="galaxy.html">Galaxy</a>
-        </div>
-      </div>
+   <!-- Botão Hamburguer (mobile) -->
+  <button class="hamburger">&#9776;</button>
 
-      <div class="search-box">
-        <input type="text" placeholder="Search..." id="searchInput" />
-        <button onclick="search()">🔍</button>
+  <!-- Menu principal (desktop + mobile) -->
+  <nav class="nav-menu">
+    <!-- Botão fechar (mobile) -->
+    <button class="close-menu">&times;</button>
+
+    <div class="dropdown">
+      <button class="dropbtn">Explore &#x25BE;</button>
+      <div class="dropdown-content">
+        <a href="missions.html">Missions</a>
+        <a href="solar-system.html">Solar System</a>
+        <a href="black-hole.html">Black Hole</a>
+        <a href="galaxy.html">Galaxy</a>
       </div>
-    </nav>
+    </div>
+     <div class="search-box">
+    <input type="text" placeholder="Search..." id="search" />
+    <button class="search-button">🔍</button>
+     </div>
+  </nav>
   </header>
 
   <main class="content-page">
@@ -105,7 +111,6 @@ Its dynamic systems—like plate tectonics and the water cycle—make it geologi
   </div>
 </section>
 
-
    <section id="mars" class="planet-section">
   <h2>Mars</h2>
   <div class="planet-content">
@@ -169,8 +174,6 @@ Winds on Uranus can reach speeds of up to 900 km/h (560 mph), despite its calm a
   </div>
 </section>
   </main>
-
-
   <footer class="site-footer">
   <div class="footer-left">
     <p>This site was created for academic purposes only. It must not be commercialized or altered.</p>
@@ -190,7 +193,6 @@ Winds on Uranus can reach speeds of up to 900 km/h (560 mph), despite its calm a
     </div>
   </div>
 </footer>
-
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,44 +1,60 @@
-/*Solar System*/
+/* ===========================
+   1. LOGO E NAVEGAÇÃO
+=========================== */
 .logo-home {
   font-size: 1.1em;
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 .logo img {
   height: 3em;
   width: auto;
 }
+
 .nav-link {
   color: white;
-  text-decoration: none;      
-  padding: 3px 10px;           
+  text-decoration: none;
+  padding: 3px 10px;
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 1.3em;
   font-family: monospace;
 }
+
 .nav-link:hover {
-  background-color: #00ffff;  
-  color: black;          
+  background-color: #00ffff;
+  color: black;
 }
+
+/* ===========================
+   2. BASE DO BODY E BACKGROUND
+=========================== */
 body {
-  background: url("imagens/er.jpg") no-repeat center center fixed;
+  background: url("../imagens/er.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white;
   position: relative;
   z-index: 0;
 }
+
 body::before {
   content: "";
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.638);
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.54);
   z-index: -1;
 }
-/* Título */
+
+/* ===========================
+   3. HERO SYSTEM (TÍTULO)
+=========================== */
 .hero-system {
-  background-image: url('imagens/ol.png');
+  background-image: url('../imagens/ol.png');
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -56,6 +72,7 @@ body::before {
   background: rgba(0, 0, 0, 0.653);
   z-index: 1;
 }
+
 .hero-text {
   position: relative;
   z-index: 2;
@@ -69,15 +86,18 @@ body::before {
   font-family: 'Zen Dots', sans-serif;
   margin-bottom: 20px;
 }
+
 .hero-text p {
-  font-size: 1.4em;
-  color: #ccc;
   font-family: monospace;
   font-size: 1.4em;
+  color: #ccc;
 }
-/* Índice fixo */
+
+/* ===========================
+   4. ÍNDICE FIXO (PLANET INDEX)
+=========================== */
 .planet-index {
-   position: sticky;
+  position: sticky;
   top: 0;
   z-index: 1000;
   display: flex;
@@ -90,24 +110,30 @@ body::before {
   font-family: 'Zen Dots', sans-serif;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .planet-index a {
-color: #000;
+  color: #000;
   text-decoration: none;
   padding: 10px 20px;
   background-color: #ccc;
   border-radius: 20px;
   transition: background-color 0.3s ease;
 }
+
 .planet-index a:hover {
-   background-color: #888;
+  background-color: #888;
   color: white;
 }
-/* Seções de planetas */
+
+/* ===========================
+   5. SEÇÕES DOS PLANETAS
+=========================== */
 .planet-section {
   padding: 60px 30px;
   border-bottom: 1px solid #333;
   text-align: center;
 }
+
 .planet-section h2 {
   font-size: 2.2em;
   color: #00bfff;
@@ -115,6 +141,7 @@ color: #000;
   font-family: 'Zen Dots', sans-serif;
   text-align: center;
 }
+
 .planet-content {
   display: flex;
   align-items: center;
@@ -124,6 +151,7 @@ color: #000;
   margin: auto;
   text-align: left;
 }
+
 .planet-content p {
   font-family: monospace;
   flex: 1;
@@ -132,22 +160,131 @@ color: #000;
   line-height: 1.6;
   text-align: left;
 }
+
 .planet-content img {
   width: 300px;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
 }
+
+/* ===========================
+   6. SCROLL SMOOTH E TARGET
+=========================== */
 html {
   scroll-behavior: smooth;
 }
+
 :target {
   scroll-margin-top: 100px;
 }
-/* RODAPÉ */
+
+/* ===========================
+   7. RODAPÉ
+=========================== */
 .site-footer {
   background-color: #000;
   color: white;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
   font-size: 1em;
+}
+.site-footer .logo img {
+  height: 3.5em;
+  width: auto;
+}
+/* Responsividade - Solar System */
+@media (max-width: 1024px) {
+  .hero-text {
+    padding: 40px;
+    max-width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 3em;
+  }
+
+  .hero-text p {
+    font-size: 1.2em;
+  }
+
+  .planet-content {
+    gap: 20px;
+  }
+
+  .planet-content img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .planet-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .planet-content p {
+    text-align: center;
+  }
+
+  .planet-content img {
+    width: 220px;
+  }
+
+  .planet-index {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .planet-index a {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-text p {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-system {
+    height: 70vh;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .hero-text p {
+    font-size: 1em;
+  }
+
+  .planet-content img {
+    width: 180px;
+  }
+
+  .planet-section {
+    padding: 40px 15px;
+  }
+@media (max-width: 768px) {
+  .planet-index {
+    display: none;
+  }
+}
+}
+.hamburger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100; /* Fica acima da lista */
 }

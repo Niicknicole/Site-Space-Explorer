@@ -1,0 +1,274 @@
+/* ===========================
+   1. RESET & BASE GLOBAL
+=========================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+/* ===========================
+   2. LOGO E NAVEGAÇÃO
+=========================== */
+.logo-home {
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  height: 3em;
+  width: auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 1.3em;
+  font-family: monospace;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #00ffff;
+  color: black;
+}
+
+/* ===========================
+   3. HERO SECTION
+=========================== */
+.missions-hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: url('../imagens/bus.jpeg') center center / cover no-repeat;
+  color: white;
+}
+
+.missions-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.707);
+  z-index: 1;
+}
+
+.missions-hero .hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 60px;
+}
+
+.missions-hero h1 {
+  font-family: 'Zen Dots', cursive, sans-serif;
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.missions-hero p {
+  font-family: monospace;
+  font-size: 1.5em;
+  color: #ccc;
+}
+
+/* ===========================
+   4. MENU DE NAVEGAÇÃO INTERNA
+=========================== */
+.mission-index {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.316);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-family: 'Zen Dots', cursive, sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mission-index a {
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #000;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mission-index a:hover {
+  background-color: #888;
+  color: #fff;
+}
+
+/* ===========================
+   5. SEÇÕES DE PAÍS
+=========================== */
+.country-section {
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  color: #111;
+}
+
+.country-section:nth-of-type(even) {
+  background-color: #e2e2e2;
+}
+
+.country-section h2 {
+  font-family: 'Zen Dots', cursive, sans-serif;
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.country-section p,
+.country-section ul li {
+  font-family: monospace;
+  font-size: 1.3em;
+  line-height: 1.7;
+  color: #333;
+}
+
+.country-section ul li {
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.highlight-blue {
+  background-color: #add8e6;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* ===========================
+   6. GALERIA
+=========================== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   7. RODAPÉ
+=========================== */
+.site-footer {
+  background-color: #000;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-size: 1em;
+}
+.site-footer .logo img {
+  height: 3.5em;
+  width: auto;
+}
+/* ===========================
+   8. RESPONSIVIDADE
+=========================== */
+@media (max-width: 1200px) {
+  .missions-hero h1 {
+    font-size: 3em;
+  }
+  .missions-hero p {
+    font-size: 1.3em;
+  }
+  .country-section {
+    padding: 50px 30px;
+  }
+  .gallery-grid {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .missions-hero {
+    justify-content: center;
+    text-align: center;
+  }
+  .missions-hero .hero-text {
+    padding: 40px 20px;
+  }
+  .missions-hero h1 {
+    font-size: 2.5em;
+  }
+  .missions-hero p {
+    font-size: 1.2em;
+  }
+  .mission-index a {
+    padding: 8px 15px;
+    font-size: 1em;
+  }
+  .country-section {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .missions-hero {
+    background-position: center center;
+    background-size: cover;
+    justify-content: center; /* centraliza o texto */
+    text-align: center;
+    padding: 40px 20px;
+    min-height: 70vh; /* um pouco menor no celular */
+  }
+@media (max-width: 480px) {
+    .mission-index {
+    gap: 8px;
+    padding: 10px;
+  }
+  .mission-index a {
+    padding: 6px 12px;
+    font-size: 0.95em;
+    border-radius: 12px;
+  }
+  .missions-hero h1 {
+    font-size: 2em;
+  }
+  .missions-hero p {
+    font-size: 1em;
+  }
+  .mission-index {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .country-section {
+    padding: 30px 15px;
+  }
+}
+}
+.hamburger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100; /* Fica acima da lista */
+}

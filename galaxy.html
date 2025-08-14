@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="imagens/favicon.ico" type="image/x-icon" />
   <title>Galaxy - Space Explorer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="galaxy.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/galaxy.css" />
   <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -17,21 +17,27 @@
       </div>
       <a href="index.html" class="nav-link">Home</a>
     </div>
-    <nav class="nav-menu">
-      <div class="dropdown">
-        <button class="dropbtn">Explore &#x25BE;</button>
-        <div class="dropdown-content">
-          <a href="missions.html">Missions</a>
-          <a href="solar-system.html">Solar System</a>
-          <a href="black-hole.html">Black Hole</a>
-          <a href="galaxy.html">Galaxy</a>
-        </div>
+    <!-- Botão Hamburguer (mobile) -->
+  <button class="hamburger">&#9776;</button>
+
+  <!-- Menu principal (desktop + mobile) -->
+  <nav class="nav-menu">
+    <!-- Botão fechar (mobile) -->
+    <button class="close-menu">&times;</button>
+
+    <div class="dropdown">
+      <button class="dropbtn">Explore &#x25BE;</button>
+      <div class="dropdown-content">
+        <a href="missions.html">Missions</a>
+        <a href="solar-system.html">Solar System</a>
+        <a href="black-hole.html">Black Hole</a>
+        <a href="galaxy.html">Galaxy</a>
       </div>
-      <div class="search-box">
-        <input type="text" placeholder="Search..." id="searchInput" />
-        <button onclick="search()">🔍</button>
-      </div>
-    </nav>
+    </div>
+     <div class="search-box">
+    <input type="text" placeholder="Search..." id="search" />
+    <button class="search-button">🔍</button>
+  </div>
   </header>
   <section class="hero-section">
   <div class="hero-overlay">
@@ -111,7 +117,7 @@ Today, galactic research helps us understand the universe’s expansion, the rol
   </div>
 </footer>
 
-  <script src="galaxies.js"></script>
-  <script src="script.js"></script>
+  <script src="js/galaxies.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
