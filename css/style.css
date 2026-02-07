@@ -36,9 +36,22 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-bg-dark);
   padding: 10px 30px;
-  box-shadow: 0 2px 10px #222;
+  
+  /* --- Efeito Transparente Fosco --- */
+  background-color: rgba(0, 0, 0, 0.271); /* Cor preta com 60% de opacidade */
+  backdrop-filter: blur(10px);          /* O desfoque "vidro" */
+  -webkit-backdrop-filter: blur(10px);  /* Suporte para navegadores Safari */
+  
+  /* --- Posicionamento --- */
+  position: fixed;   /* Fixa no topo para ver o efeito sobre o conteúdo */
+  top: 0;
+  width: 100%;
+  z-index: 2000;     /* Garante que fique acima de tudo */
+  
+  /* Removi o box-shadow antigo para um visual mais limpo, 
+     ou você pode usar um bem sutil como abaixo: */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo img {
@@ -165,6 +178,7 @@ mark.search-highlight {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 80px;
 }
 
 .overlay {

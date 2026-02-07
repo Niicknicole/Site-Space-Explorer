@@ -43,25 +43,33 @@ body {
 =========================== */
 .missions-hero {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background: url('../imagens/bus.jpeg') center center / cover no-repeat;
+  overflow: hidden; 
+  background: black; 
   color: white;
 }
-
-.missions-hero::before {
-  content: "";
+.hero-video {
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.707);
-  z-index: 1;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0; /* Fica no fundo */
+  transform: translate(-50%, -50%); /* Centraliza o vídeo */
+  object-fit: cover; /* Faz o vídeo cobrir a área sem distorcer */
+  
 }
 
+
+/* Garantir que o texto apareça sobre o vídeo e o overlay */
 .missions-hero .hero-text {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* Nível mais alto */
   max-width: 800px;
   padding: 60px;
 }
