@@ -1,5 +1,4 @@
 
-// Lista completa de galáxias
 const galaxies = [
   {
     name: "Andromeda",
