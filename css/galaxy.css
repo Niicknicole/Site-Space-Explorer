@@ -1,6 +1,4 @@
-/* ===========================
-   1. ESTILO GERAL
-=========================== */
+/* ESTILO GERAL */
 body {
   background-color: black;
   color: rgb(18, 18, 18);
@@ -15,9 +13,7 @@ body::before {
   z-index: -1;
 }
 
-/* ===========================
-   2. LOGO E NAVEGAÇÃO
-=========================== */
+/* LOGO E NAVEGAÇÃO */
 .logo-home {
   font-size: 1.1em;
   display: flex;
@@ -45,9 +41,7 @@ body::before {
   color: black;
 }
 
-/* ===========================
-   3. CONTEÚDO PRINCIPAL
-=========================== */
+/*CONTEÚDO PRINCIPAL*/
 .content-page {
   padding-top: 100px;
   max-width: 1200px;
@@ -94,9 +88,7 @@ body::before {
   font-family: monospace;
 }
 
-/* ===========================
-   4. SEÇÕES DE TEXTO
-=========================== */
+/* SEÇÕES DE TEXTO */
 .info-sections {
   width: 100%;
   background-color: #f9f9f9;
@@ -139,9 +131,7 @@ body::before {
   margin-bottom: 10px;
 }
 
-/* ===========================
-   5. EFEITOS COM JS (FADE E EXPAND)
-=========================== */
+/*EFEITOS COM JS*/
 .fade-expand {
   opacity: 0;
   transform: translateY(30px);
@@ -153,9 +143,7 @@ body::before {
   transform: translateY(0);
 }
 
-/* ===========================
-   6. GALAXY RANDOM SECTION
-=========================== */
+/* GALAXY RANDOM */
 .galaxy-random-section {
   padding: 60px 20px;
   background: radial-gradient(circle, rgba(20,20,40,0.9), black);
@@ -233,9 +221,7 @@ body::before {
   margin-top: 15px;
 }
 
-/* ===========================
-   7. RODAPÉ
-=========================== */
+/*FOOTER */
 .site-footer {
   background-color: #000;
   color: white;
@@ -248,11 +234,9 @@ body::before {
   width: auto;
 }
 
-/* ===========================
-   RESPONSIVO - GALAXY PAGE
-=========================== */
+/* GALAXY PAGE*/
 
-/* Celulares pequenos (até 480px) */
+/* Celulares pequenos*/
 @media (max-width: 480px) {
   .hero-section {
     height: 70vh;
@@ -310,7 +294,7 @@ body::before {
   }
 }
 
-/* Celulares médios e tablets (até 768px) */
+/* Celulares médios*/
 @media (max-width: 768px) {
   .hero-section {
     height: 80vh;
@@ -342,7 +326,7 @@ body::before {
   }
 }
 
-/* Ajustes gerais para telas verticais */
+/* Ajustes gerais para telas verticais*/
 @media (orientation: portrait) {
   .hero-section {
     justify-content: center;

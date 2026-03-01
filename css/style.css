@@ -1,6 +1,4 @@
-/* ===========================
-   1. RESET & BASE GLOBAL
-=========================== */
+/* RESET & BASE GLOBAL */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,9 +15,7 @@ html, body {
   color: #fff;
 }
 
-/* ===========================
-   2. VARIÁVEIS (CSS Custom Properties)
-=========================== */
+/*VARIÁVEIS */
 :root {
   --color-primary: #00ffff;
   --color-bg-dark: #000000fa;
@@ -29,28 +25,22 @@ html, body {
   --font-mono: monospace;
 }
 
-/* ===========================
-   3. NAVBAR
-=========================== */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  
-  /* --- Efeito Transparente Fosco --- */
-  background-color: rgba(0, 0, 0, 0.271); /* Cor preta com 60% de opacidade */
-  backdrop-filter: blur(10px);          /* O desfoque "vidro" */
-  -webkit-backdrop-filter: blur(10px);  /* Suporte para navegadores Safari */
+
+  background-color: rgba(0, 0, 0, 0.271); 
+  backdrop-filter: blur(10px);         
+  -webkit-backdrop-filter: blur(10px); 
   
   /* --- Posicionamento --- */
-  position: fixed;   /* Fixa no topo para ver o efeito sobre o conteúdo */
+  position: fixed;  
   top: 0;
   width: 100%;
-  z-index: 2000;     /* Garante que fique acima de tudo */
-  
-  /* Removi o box-shadow antigo para um visual mais limpo, 
-     ou você pode usar um bem sutil como abaixo: */
+  z-index: 2000;    
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -73,7 +63,7 @@ mark.search-highlight {
   gap: 20px;
 }
 
-/* --- Dropdown --- */
+/*Dropdown*/
 .dropdown {
   position: relative;
 }
@@ -99,7 +89,7 @@ mark.search-highlight {
   color: var(--color-primary);
 }
 
-/* --- Dropdown Content --- */
+/* Dropdown Content */
 .dropdown-content {
   position: absolute;
   top: 100%;
@@ -138,7 +128,7 @@ mark.search-highlight {
   color: #000;
 }
 
-/* --- Search Box --- */
+/* Search Box */
 .search-box {
   display: flex;
   align-items: center;
@@ -167,9 +157,7 @@ mark.search-highlight {
   height: 30px;
 }
 
-/* ===========================
-   4. HERO
-=========================== */
+/*HERO*/
 .hero {
   height: 100vh;
   background: url("../imagens/uni.gif") no-repeat center center / cover;
@@ -196,9 +184,7 @@ mark.search-highlight {
   margin-bottom: 20px;
 }
 
-/* ===========================
-   5. POSTERS
-=========================== */
+/* POSTERS*/
 .poster-section {
   padding: 70px 40px;
   background-color: #0c042052;
@@ -233,7 +219,7 @@ mark.search-highlight {
   transform: scale(1.05);
 }
 
-/* --- Poster Flip --- */
+/*Poster Flip */
 .poster-inner {
   position: relative;
   width: 280px;
@@ -281,9 +267,7 @@ mark.search-highlight {
   text-align: center;
 }
 
-/* ===========================
-   6. INFO SECTION
-=========================== */
+/*INFO SECTION */
 .info-section-home {
   background-color: var(--color-bg-light); 
   padding: 60px 40px;
@@ -310,9 +294,7 @@ mark.search-highlight {
   color: #222;
 }
 
-/* ===========================
-   7. FOOTER
-=========================== */
+/* FOOTER*/
 .site-footer {
   display: flex;
   flex-wrap: wrap;
@@ -323,7 +305,7 @@ mark.search-highlight {
   padding: 25px;
   text-align: center;
   font-size: 1em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .site-footer .footer-left,
@@ -337,7 +319,7 @@ mark.search-highlight {
   line-height: 1.6;
 }
 
-/* ===== RESPONSIVO MOBILE ===== */
+/*RESPONSIVO MOBILE  */
 /* Botão hamburguer */
 .hamburger {
   font-size: 2.5em;

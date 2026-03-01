@@ -1,6 +1,4 @@
-/* ===========================
-   1. LOGO E NAVEGAÇÃO
-=========================== */
+/*LOGO E NAVEGAÇÃO*/
 .logo-home {
   font-size: 1.1em;
   display: flex;
@@ -28,9 +26,7 @@
   color: black;
 }
 
-/* ===========================
-   2. HERO - BLACK HOLE
-=========================== */
+/* HERO - BLACK HOLE */
 .blackhole-hero {
   background-image: url('../imagens/blk.jpg');
   background-size: cover;
@@ -72,9 +68,7 @@
   font-family: monospace;
 }
 
-/* ===========================
-   3. INFO SECTION
-=========================== */
+/* INFO SECTION */
 .info-section {
   width: 100%;
   background-color: #f9f9f9;
@@ -119,9 +113,7 @@
   margin-right: 8px;
 }
 
-/* ===========================
-   4. GALLERY GRID
-=========================== */
+/*GALLERY GRID*/
 .gallery-grid {
   display: flex;
   justify-content: center;
@@ -143,9 +135,7 @@
   transform: translateY(-10px);
 }
 
-/* ===========================
-   5. VIDEO SWITCH (INTERRUPTOR)
-=========================== */
+/* VIDEO SWITCH */
 .video-switch {
   position: absolute;
   top: 80px;
@@ -200,9 +190,7 @@
   transform: translateX(-100%);
 }
 
-/* ===========================
-   6. VIDEO OVERLAY
-=========================== */
+/*VIDEO OVERLAY */
 .video-overlay {
   position: fixed;
   top: 0;
@@ -227,9 +215,7 @@
   pointer-events: auto;
 }
 
-/* ===========================
-   7. FOOTER
-=========================== */
+/* FOOTER*/
 .site-footer {
   background-color: #000;
   color: white;
@@ -243,11 +229,7 @@
 }
 
 
-/* ===========================
-   RESPONSIVE - BLACK HOLE PAGE
-=========================== */
-
-/* Telas grandes - desktops padrão */
+/*RESPONSIVE*/
 @media (max-width: 1200px) {
   .hero-text {
     padding: 50px;
@@ -271,8 +253,6 @@
     height: 220px;
   }
 }
-
-/* Telas médias - tablets */
 @media (max-width: 992px) {
   .hero-text {
     padding: 40px;
@@ -301,8 +281,6 @@
     height: 200px;
   }
 }
-
-/* Telas pequenas - smartphones grandes */
 @media (max-width: 768px) {
   .hero-text {
     padding: 30px;
@@ -338,7 +316,7 @@
   }
 
 
-/* Telas muito pequenas - smartphones pequenos */
+/* Telas muito pequenas */
 @media (max-width: 480px) {
   .hero-text h1 {
     font-size: 2em;
