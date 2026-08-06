@@ -22,7 +22,7 @@ O site contém seções como Missões, Sistema Solar, Buracos Negros e Galáxias
 - Lógica de randomização com controle de repetição
 - Uso de Event Listeners
 - Implementação de scrollIntoView()
-- Layout responsivo utilizando Flexbox
+- Layout responsivo para diferentes tamanhos de telas utilizando Flexbox
 - Estrutura modular com separação de responsabilidades
 
 ---
@@ -36,6 +36,12 @@ O projeto está disponível online através do GitHub Pages:
 1. Clone este repositório:
    `git clone https://github.com/niicknicole/Site-Space-Explorer.git`
 2. Abra o arquivo `index.html` no seu navegador de preferência.
+
+<img width="1667" height="720" alt="img1" src="https://github.com/user-attachments/assets/bfc01768-c941-4c3c-9e26-df223035429b" />
+
+---
+
+<img width="1862" height="907" alt="img2" src="https://github.com/user-attachments/assets/4d0fc19f-a133-45fa-b4f8-85bf2bd6f2f5" />
 
 ---
 *Feito por Nicole de Oliveira*
